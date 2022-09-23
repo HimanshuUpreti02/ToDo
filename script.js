@@ -1,3 +1,5 @@
 function addItem(event){
-    console.log(event)
+    event.preventDefault();
+    let text = document.getElementById('todo-input');
+    
 }

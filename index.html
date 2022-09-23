@@ -36,8 +36,63 @@
             </div>
             <div class="new-todo-input">
                 <form onsubmit="addItem(event)">
-                    <input type="text" placeholder="Create a new Todo">
+                    <input id="todo-input" type="text" placeholder="Create a new Todo">
                 </form>
+            </div>
+        </div>
+
+        <div class="todo-wrapper">
+            <div class="todo-items">
+                <div class="todo-item">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="./Assets/icon-check.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="todo-text">
+                        cut the lawn
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="./Assets/icon-check.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="todo-text">
+                        cut the lawn
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="./Assets/icon-check.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="todo-text">
+                        cut the lawn
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="todo-items-info">
+                <div class="items-left">
+                    5 items left
+                </div>
+
+                <div class="items-status">
+                    <span>All</span>
+                    <span>Active</span>
+                    <span>Completed</span>
+                </div>
+
+                <div class="items-clear">
+                    <span>Clear completed</span>
+                </div>
             </div>
         </div>
     </div>
