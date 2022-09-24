@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>
     <script src="./script.js"></script>
 </head>
 
@@ -35,7 +39,7 @@
                 </div>
             </div>
             <div class="new-todo-input">
-                <form onsubmit="addItem(event)">
+                <form onsubmit="addItem(event);" autocomplete="off">
                     <input id="todo-input" type="text" placeholder="Create a new Todo">
                 </form>
             </div>
@@ -76,7 +80,7 @@
                         cut the lawn
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="todo-items-info">
@@ -85,7 +89,7 @@
                 </div>
 
                 <div class="items-status">
-                    <span>All</span>
+                    <span class="active">All</span>
                     <span>Active</span>
                     <span>Completed</span>
                 </div>

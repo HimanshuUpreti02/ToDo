@@ -28,7 +28,7 @@ body{
     top : 0;
     left :0;
     right:0;
-    height: 360px;
+    height: 309px;
     z-index: -1;
 }
 
@@ -119,10 +119,12 @@ body{
     width: 100%;
     display: flex;
     height: 60px;
+    background-color: hsl(235, 24%, 19%);
     border-bottom: 1px solid hsl(237, 14%, 26%);
     color: hsl(234, 39%, 85%);
     font-size: 18px;
     transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 .todo-item:hover{
@@ -166,6 +168,11 @@ body{
     cursor: pointer;
 }
 
-.items-status span:hover{
+.items-status span:hover , .items-status span.active ,.items-clear:hover{
     color: rgb(96, 96, 219);
+}
+
+.items-clear{
+    cursor:pointer;
+    text-align:end;
 }
